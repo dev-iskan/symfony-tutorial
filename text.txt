@@ -5,3 +5,7 @@ RUN composer install --no-dev --prefer-dist --optimize-autoloader
 
 COPY ./ ./
 
+
+
+2. run if you want website MVC application
+ composer create-project symfony/website-skeleton my_project_name
