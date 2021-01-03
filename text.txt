@@ -1,0 +1,7 @@
+1. на продакшене сначала нужно скопировать composer.json и composer.lock и потом все остальное:
+COPY ./composer.json ./composer.lock ./
+
+RUN composer install --no-dev --prefer-dist --optimize-autoloader
+
+COPY ./ ./
+
