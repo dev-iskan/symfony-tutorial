@@ -9,3 +9,6 @@ COPY ./ ./
 
 2. run if you want website MVC application
  composer create-project symfony/website-skeleton my_project_name
+
+
+ RAD - rapid application development
