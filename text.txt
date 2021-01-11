@@ -5,11 +5,8 @@ RUN composer install --no-dev --prefer-dist --optimize-autoloader
 
 COPY ./ ./
 
-
-
 2. run if you want website MVC application
  composer create-project symfony/website-skeleton my_project_name
-
 
  RAD - rapid application development
  создание контроллеров
@@ -17,3 +14,14 @@ COPY ./ ./
  роутинг в symfony
  подключение бд
  env конфиги для разных сред разработок
+ команды make:entity, make:migration, make:crud
+ аутентификация, make:user, make:auth и т.д.
+
+ Doctrine:
+1. подключению
+2. конфиги
+3. entity manager
+4. Unit of Work
+5. repository
+6. identity map
+7. data mapper
