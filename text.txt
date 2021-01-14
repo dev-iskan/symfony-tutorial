@@ -25,3 +25,44 @@ COPY ./ ./
 5. repository
 6. identity map
 7. data mapper
+
+
+day 4:
+ -> NGINX
+ $_GET, $_POST, $_FILES, $_COOKIES, $_SERVER
+ -> index.php
+    $kernel = new Kernel($_SERVER['APP_ENV'], (bool) $_SERVER['APP_DEBUG']);
+    $request = Request::createFromGlobals();
+    $response = $kernel->handle($request);
+    $response->send();
+
+    echot response
+
+
+ ->PHP CLI:
+ $argv
+ $argc
+
+ console:
+ $kernel = new Kernel($_SERVER['APP_ENV'], (bool) $_SERVER['APP_DEBUG']);
+ $application = new Application($kernel);
+ $application->run($input);
+
+
+
+->RabbitMQ
+{
+    "name",
+    "data" : {
+        email: ...
+        password: ...
+    }
+}
+
+
+в сервисах нельзя использовать специфичные классы, вместо request использовать dto и т.д.
+
+CQRS
+доменный слой
+слой приложения
+dto
