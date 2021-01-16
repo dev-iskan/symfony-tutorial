@@ -66,3 +66,16 @@ CQRS
 доменный слой
 слой приложения
 dto
+
+название папок совпадающие с неймспейсом пишем с большой буквы App\Models
+
+docker-compose run --rm manager-php-cli composer require ramsey/uuid
+
+command handler:
+https://levelup.gitconnected.com/what-is-cqrs-command-design-pattern-5d400fd9f93a
+
+use-case pattern
+dto - antipattern?
+command bus
+message bus
+domain native repository - elisdn
